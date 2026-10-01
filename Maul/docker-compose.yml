@@ -1,0 +1,10 @@
+services:
+  kali-container:
+    image: maul-kali:v1
+    container_name: maul-saberstaff
+    restart: unless-stopped
+    cap_add:
+      - CAP_NET_ADMIN
+    volumes:
+      - C:\RFT\Projects\Sith-Citadel:/shield-tests
+    command: sleep infinity
